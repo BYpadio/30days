@@ -1,0 +1,155 @@
+/*Anything that has to do with font is going to be google font*/
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    background-clip: border-box;
+    background-origin: border-box;
+    background-position: center;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-wrap: break-word;
+    overflow-x: hidden;
+    background-color: rgb(247, 248, 248);
+}
+
+body>header {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(4, 59, 4);
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    box-shadow: rgba(146, 144, 144, 0.856) -5px -7px 5px 7px;
+    overflow: hidden;
+}
+
+body>header>h1 {
+    color: #fff;
+    font: bold arial;
+    text-align: center;
+    box-sizing: content-box;
+    width: fit-content;
+    margin: auto;
+}
+
+body>header>nav {
+    margin: 10px auto;
+    box-sizing: content-box;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.61);
+    text-align: center;
+    padding: 5px;
+}
+
+body>header>nav>ul {
+    width: 50%;
+    margin: auto;
+    height: 100%;
+}
+
+body>header>nav>ul>li {
+    list-style: none;
+    width: fit-content;
+    height: fit-content;
+    font: 16pt arial;
+    display: inline-block;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+body>header>nav>ul>li>a {
+    margin: auto 5px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    box-sizing: border-box;
+    width: 70px;
+    height: 25px;
+    color: #fff;
+    transition: ease-in-out 0.3s all;
+}
+
+body header nav a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+
+/* body header nav a:active {
+    border-bottom: 3px solid blue;
+} */
+
+main {
+    position: relative;
+    top: 81px;
+    width: 60%;
+    margin: 0 auto;
+    padding: 10px;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+main>section {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+    margin: 5px auto;
+    z-index: 222;
+    box-shadow: rgba(155, 154, 154, 0.788) 1px 3px 1px 3px;
+}
+
+main>.myinfo {
+    margin: 0 auto;
+    padding: 10px;
+    overflow: hidden;
+    width: 100%;
+    height: 150px;
+}
+
+.myinfo .picture,
+.profile {
+    box-sizing: border-box;
+    display: inline-block;
+    overflow: hidden;
+    width: 25%;
+    height: 100%;
+    margin-right: 10px;
+}
+
+.myinfo>.picture>img {
+    border-radius: 10px;
+    border: solid 3px silver;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.myinfo>.profile {
+    background-color: white;
+    word-wrap: break-word;
+    width: 70%;
+    padding: 5px;
+}
+
+.myinfo>.profile>h4 {
+    margin: 10px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.myinfo>.profile>p {
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
